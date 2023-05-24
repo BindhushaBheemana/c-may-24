@@ -1,0 +1,29 @@
+Find the frequency of the given elements in the array
+#include<stdio.h>
+void main()
+{
+	int a[100],i,n,num,count=0;
+	printf("enter the size of array:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("enter the elemented to be counted:");
+	scanf("%d",&num);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==num)
+		   {
+		   	count++;
+		   }
+	}
+	if(count!=0)
+	{
+		printf("%d times",count);
+	}
+	else
+	 {
+	 	printf("element not found");
+	 }
+}
